@@ -1,0 +1,69 @@
+# ============================================
+# Weave Fashion AI — Root .gitignore
+# ============================================
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Bytecode & Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# OS-Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Databases & Runtime State
+*.db
+*.sqlite
+*.sqlite3
+weave_dev.db
+
+# Media Storage & Temporary Uploads (Keep directory structure via .gitkeep)
+backend/media/generations/*
+backend/media/uploads/*
+backend/media/exports/*
+!backend/media/generations/.gitkeep
+!backend/media/uploads/.gitkeep
+!backend/media/exports/.gitkeep
+backend/storage/generated/*
+!backend/storage/generated/.gitkeep
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# ML Datasets & Large Caches
+.cache/
+data/
+ml/data/
+*.tar.gz
+*.zip
+evaluation_results.json
